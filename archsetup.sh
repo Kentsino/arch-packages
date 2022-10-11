@@ -6,7 +6,7 @@ sudo pacman -Syu
 
 #Installing programs
 echo "Installing essentials"
-sudo pacman -S firefox neovim ufw apparmor nvidia amd-ucode cuda htop zsh flameshot xorg libx11 libxinerama libxft dunst nitrogen wget
+sudo pacman -S firefox neovim ufw apparmor nvidia amd-ucode cuda htop zsh flameshot xorg libx11 libxinerama libxft dunst nitrogen wget lf
 
 #Creating directories 
 echo "Creating home directories"
