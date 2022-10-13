@@ -30,7 +30,6 @@ cd ~/st-0.9/ && make && sudo make install
 echo "Configuring dotfiles"
 cd ~/git/ && git clone https://github.com/Kentsino/dotfiles.git && cd dotfiles/
 ln -s ~/git/dotfiles/nvim ~/.config/
-ln -s ~/git/dotfiles/.zshrc ~/
 
 # Setting shell
 chsh -s /bin/zsh
