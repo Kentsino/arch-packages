@@ -25,3 +25,12 @@ echo "Compiling suckless"
 cd ~/dwm-6.4/ && make && sudo make install 
 cd ~/dmenu-5.2/ && make && sudo make install 
 cd ~/st-0.9/ && make && sudo make install
+
+# Cloning and linking dots
+echo "Configuring dotfiles"
+cd ~/git/ && git clone https://github.com/Kentsino/dotfiles.git && cd dotfiles/
+ln -s ~/git/dotfiles/nvim ~/.config/
+ln -s ~/git/dotfiles/.zshrc ~/
+
+# Setting shell
+chsh -s /bin/zsh
