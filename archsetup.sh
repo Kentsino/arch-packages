@@ -13,6 +13,7 @@ sudo pacman -S firefox alacritty neovim ufw apparmor nvidia amd-ucode cuda htop 
 echo "Creating home directories"
 mkdir git wallpapers aur
 
+# Installing suckless
 echo "do you want suckless? yes or no?"
 
 read suck
