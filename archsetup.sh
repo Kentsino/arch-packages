@@ -7,7 +7,7 @@ sudo pacman -Syu
 
 # Installing programs
 echo "Installing essentials"
-sudo pacman -S firefox kitty neovim ufw apparmor nvidia amd-ucode cuda htop pulseaudio pavucontrol xorg-xinit flameshot xorg libx11 libxinerama libxft dunst nitrogen wget lf feh ttf-jetbrains-mono patch
+sudo pacman -S firefox kitty neovim ufw apparmor nvidia amd-ucode cuda htop pulseaudio pavucontrol xorg-xinit flameshot xorg libx11 libxinerama zsh zsh-autosuggestions zsh-syntax-highlighting libxft dunst nitrogen wget lf feh ttf-jetbrains-mono patch
 
 # Creating directories 
 echo "Creating home directories"
@@ -34,3 +34,5 @@ fi
 echo "Configuring dotfiles"
 cd ~/git/ && git clone https://github.com/Kentsino/dotfiles.git && cd dotfiles/
 ln -s ~/git/dotfiles/nvim ~/.config/
+ln -s ~/git/dotfiles/.zshrc ~/
+ln -s ~/git/dotfiles/starship.toml ~/.config/
