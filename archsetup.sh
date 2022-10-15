@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Script made by Kenzino https://github.com/Kentsino
 
 # Updating the system
