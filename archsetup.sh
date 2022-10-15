@@ -13,16 +13,21 @@ sudo pacman -S firefox alacritty neovim ufw apparmor nvidia amd-ucode cuda htop 
 echo "Creating home directories"
 mkdir git wallpapers aur
 
-# Installing suckless programs
+echo "do you want suckless? yes or no?"
+
+read suck
+
+if [ $suck = yes ]; then
 echo "Installing suckless"
 wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz && tar -xzvf dwm-6.4.tar.gz
 wget https://dl.suckless.org/tools/dmenu-5.2.tar.gz && tar -xzvf dmenu-5.2.tar.gz
 rm dwm-6.4.tar.gz dmenu-5.2.tar.gz
-
-# Compiling suckless programs
 echo "Compiling suckless"
 cd ~/dwm-6.4/ && make && sudo make install 
-cd ~/dmenu-5.2/ && make && sudo make install 
+cd ~/dmenu-5.2/ && make && sudo make install
+else 
+echo "failed"
+fi
 
 # Cloning and linking dots
 echo "Configuring dotfiles"
