@@ -37,3 +37,6 @@ ln -s ~/git/dotfiles/nvim ~/.config/
 ln -s ~/git/dotfiles/.zshrc ~/
 ln -s ~/git/dotfiles/starship.toml ~/.config/
 ln -s ~/git/dotfiles/alacritty ~/.config/
+
+# Change to zsh
+chsh -s /bin/zsh
