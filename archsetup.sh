@@ -36,3 +36,4 @@ cd ~/git/ && git clone https://github.com/Kentsino/dotfiles.git && cd dotfiles/
 ln -s ~/git/dotfiles/nvim ~/.config/
 ln -s ~/git/dotfiles/.zshrc ~/
 ln -s ~/git/dotfiles/starship.toml ~/.config/
+ln -s ~/git/dotfiles/alacritty 
