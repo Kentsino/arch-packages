@@ -11,7 +11,7 @@ sudo pacman -S firefox kitty neovim ufw apparmor nvidia amd-ucode cuda htop puls
 
 # Creating directories 
 echo "Creating home directories"
-mkdir git wallpapers aur
+mkdir documents wallpapers git aur
 
 # Installing suckless
 echo "do you want suckless? yes or no?"
