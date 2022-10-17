@@ -13,30 +13,8 @@ sudo pacman -S firefox pacman-contrib alacritty neovim ufw apparmor nvidia amd-u
 echo "Creating home directories"
 mkdir ~/documents ~/git ~/aur
 
-# Installing suckless
-echo "do you want suckless? yes or no?"
-
-read suck
-
-if [ $suck = yes ]; then
-echo "Installing suckless"
-wget https://dl.suckless.org/dwm/dwm-6.4.tar.gz && tar -xzvf dwm-6.4.tar.gz
-wget https://dl.suckless.org/tools/dmenu-5.2.tar.gz && tar -xzvf dmenu-5.2.tar.gz
-rm dwm-6.4.tar.gz dmenu-5.2.tar.gz
-echo "Compiling suckless"
-cd ~/dwm-6.4/ && make && sudo make install 
-cd ~/dmenu-5.2/ && make && sudo make install
-else 
-echo "failed"
-fi
-
-# Cloning and linking dots
-echo "Configuring dotfiles"
-cd ~/git/ && git clone https://github.com/Kentsino/dotfiles.git && cd dotfiles/
-ln -s ~/git/dotfiles/nvim ~/.config/
-ln -s ~/git/dotfiles/.zshrc ~/
-ln -s ~/git/dotfiles/starship.toml ~/.config/
-ln -s ~/git/dotfiles/alacritty ~/.config/
-
 # Change to zsh
 chsh -s /bin/zsh
+
+# Firewall
+sudo ufw enable
