@@ -11,7 +11,7 @@ sudo pacman -S firefox pacman-contrib alacritty neovim ufw apparmor nvidia amd-u
 
 # Creating directories 
 echo "Creating home directories"
-mkdir documents wallpapers git aur
+mkdir ~/documents ~/git ~/aur
 
 # Installing suckless
 echo "do you want suckless? yes or no?"
