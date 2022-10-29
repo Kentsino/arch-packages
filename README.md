@@ -1,4 +1,3 @@
-# archsetup
-scrip for post install of arch since i'm lazy, extremely incomplete.
+# arch packages
 
-learning about bash scripts and automation
+sudo pacman -S firefox pacman-contrib alacritty neovim ufw apparmor nvidia amd-ucode cuda htop pulseaudio pavucontrol xorg-xinit flameshot xorg libx11 libxinerama zsh zsh-autosuggestions zsh-syntax-highlighting libxft dunst nitrogen wget lf feh ttf-jetbrains-mono patch
